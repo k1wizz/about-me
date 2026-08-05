@@ -1,15 +1,21 @@
+body {
+    font-family: "Patrick Hand", cursive;
+    background-color: rgb(225, 208, 221);
+}
+
 ul {
     list-style-type: none;
-    margin: 2px;
+    margin: 0;
     padding: 0;
     overflow: hidden;
-    float:right
+    float: right;
+    right: 3px;
 }
 
 ul li {
     float: right;
+    border: 2px solid rgb(123, 103, 186);
 }
-
 ul li a {
     display: block;
     color: rgb(123, 103, 186);
@@ -17,7 +23,10 @@ ul li a {
     text-decoration: none;
     padding: 12px 16px;
     font-size: 30px;
-    font-family: "Patrick Hand", cursive;
+}
+ul li a:hover {
+    background-color: rgb(123, 103, 186);
+    color: rgb(225, 208, 221);
 }
 a:hover {
     color: rgb(58, 47, 91);
@@ -27,24 +36,23 @@ a {
     color: rgb(123, 103, 186);
     text-decoration: none;
 }
+
 h1 {
     font-size: 48px;
-    font-family: "Patrick Hand", cursive;
     padding: 4px;
     margin: 0;
 }
 
 h2 {
     font-size: 24px;
-    font-family: "Patrick Hand", cursive;
     margin: 2px;
 }
 
 h3 {
     font-size: 20px;
-    font-family: "Patrick Hand", cursive;
     margin: 2px;
 }
+
 svg {
     margin-top: 4px;
 }
