@@ -2,19 +2,28 @@ body {
     font-family: "Patrick Hand", cursive;
     background-color: rgb(225, 208, 221);
 }
+#intro {
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "roles images""links images";
 
+}
+#images {
+    grid-area: images;
+}
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: 6px;
     padding: 0;
     overflow: hidden;
     float: right;
-    right: 3px;
 }
 
 ul li {
     float: right;
-    border: 2px solid rgb(123, 103, 186);
+    border: 3px solid rgb(123, 103, 186);
+    border-radius: 5px;
 }
 ul li a {
     display: block;
@@ -51,8 +60,4 @@ h2 {
 h3 {
     font-size: 20px;
     margin: 2px;
-}
-
-svg {
-    margin-top: 4px;
 }
