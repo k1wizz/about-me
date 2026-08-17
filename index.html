@@ -12,7 +12,8 @@
     <div>
         <ul>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="index.html" id="active">Home</a></li>
+            <button id="toggle" onclick="themeToggle()">☀️</button>
         </ul>
         <h1 style="text-align: left; font-size: 54px; padding: 0;"> Kimi!! </h1>
         <p style="font-weight: bold; margin: 0;"> she/her ~ PDT timezone </p>
@@ -30,8 +31,8 @@
             </audio>
         </div>
         <div id="images">
-            <img style="height:250px;" src="./images/pr2026.jpg" alt="robotics">
-            <img style="height:250px;" src="./images/sunshineandrainbows.jpg" alt="silly pic">
+            <img src="./images/pr2026.jpg" alt="robotics">
+            <img id="silly" src="./images/sunshineandrainbows.jpg" alt="silly pic">
         </div>
         <div id="links">
             <h3> <a href="mailto:kimlee749@hotmail.com">kimlee749@hotmail.com</a></h3>
@@ -72,6 +73,11 @@
         <h1>About Me!</h1>
         <p> wip... </p>
     </div>
+    <div id="card">
+        <h3> Interests: </h3>
+        <p> </p>
+    </div>
+    <script src="themetoggle.js"></script>
 </body>
 
 </html>

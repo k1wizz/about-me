@@ -12,11 +12,12 @@
 <body>
     <div>
         <ul>
-            <li><a href="projects.html" id="projects">Projects</a></li>
+            <li><a href="projects.html" id="active">Projects</a></li>
             <li><a href="index.html">Home</a></li>
+            <button id="toggle" onclick="themeToggle()">☀️</button>
         </ul>
         <h1>Projects and Contributions</h1>
-        <h2 style="color:black"> Click on labels to go to site or repo</h2>
+        <h2> Click on labels to go to site or repo</h2>
     </div>
     <h2 id="subtitle"> Coding </h2>
     <div class="gallery">
@@ -27,6 +28,13 @@
             <h2 class="desc"> <a target="_blank" href="https://www.pentictonrobotics.ca">Penticton Robotics
                     website</a>
             </h2>
+        </div>
+        <div class="item">
+            <a target="_blank" href="./images/hackclub-icon-square.png">
+                <img src="./images/hackclub-icon-square.png" alt="Pen High Hack Club">
+            </a>
+            <h2 class="desc"> <a target="_blank" href="https://k1wizz.github.io/PenHighHackClub/"> Pen High Hack
+                    Club</a></h2>
         </div>
         <div class="item">
             <a target="_blank" href="./images/catsite.png">
@@ -68,6 +76,7 @@
             <h2 class="desc">FuseRing Keychain</h2>
         </div>
     </div>
+    <script src="themetoggle.js"></script>
 </body>
 
 </html>

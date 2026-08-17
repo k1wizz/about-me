@@ -19,4 +19,14 @@ div.item {
 
 img {
     height: 250px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    img {
+        height: 200px;
+    }
+    h1 {
+        font-size: 34px;
+    }
 }

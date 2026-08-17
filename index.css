@@ -7,18 +7,22 @@ body {
     font-family: "Choco cooky", Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(225, 208, 221);
 }
+
+#toggle {
+    cursor: pointer;
+    background-color: rgb(225, 208, 221);
+    border: 3px solid rgb(122, 103, 186);
+    border-radius: 50px;
+    padding: 18px;
+    font-size: 24px;
+}
+
 ::selection {
     color: white;
     background-color: rgb(123, 103, 186);
 }
 
-#home {
-    background-color: rgb(123, 103, 186);
-    color: rgb(225, 208, 221);
-    border-radius: 50px;
-    text-decoration: underline;
-}
-#projects {
+#active {
     background-color: rgb(123, 103, 186);
     color: rgb(225, 208, 221);
     border-radius: 50px;
@@ -35,6 +39,11 @@ body {
 
 #images {
     grid-area: images;
+}
+
+img {
+    height: 250px;
+    border-radius: 20px;
 }
 
 ul {
@@ -95,4 +104,33 @@ h2 {
 h3 {
     font-size: 20px;
     margin: 4px;
+}
+
+p {
+    margin: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    #intro {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "roles" "links" "images";
+    }
+
+    #silly {
+        display: none;
+    }
+}
+
+.dark-mode {
+    background-color: rgb(25, 24, 24);
+    color: rgb(225, 208, 221)
+}
+.dark-mode #toggle {
+    background-color: rgb(122, 103, 186)
+
+}
+.dark-mode #subtitle {
+    color: rgb(225, 208, 221);
 }
