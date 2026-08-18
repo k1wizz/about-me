@@ -1,19 +1,19 @@
 function themeToggle() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
+    darkmode = localStorage.getItem('dark-mode')
+    darkmode !== "active" ? enableDarkmode() : disableDarkmode()
 }
-document.getElementById("toggle").addEventListener('change', function () {
-    localStorage.setItem('dark-mode', this.checked);
-    if (this.checked) {
-        element.classList.add('dark-mode')
-        document.getElementById("toggle").textContent = "🌙"
 
-    } else {
-        element.classList.remove('dark-mode')
-        document.getElementById("toggle").textContent = "☀️"
-    }
-    console.log (this.checked)
-});
-if (localStorage.getItem('dark-mode')) {
-    element.classList.add('dark-mode');
+let darkmode = localStorage.getItem('dark-mode')
+// const themeToggle = document.getElementById('toggle')
+
+const enableDarkmode = () => {
+    document.body.classList.add('dark-mode')
+    localStorage.setItem('dark-mode', 'active')
 }
+
+const disableDarkmode = () => {
+    document.body.classList.remove('dark-mode')
+    localStorage.setItem('dark-mode', null)
+}
+
+if (darkmode === "active") enableDarkmode()
