@@ -8,6 +8,10 @@ body {
     background-color: rgb(225, 208, 221);
 }
 
+svg {
+    display: block;
+}
+
 ::selection {
     color: white;
     background-color: rgb(123, 103, 186);
