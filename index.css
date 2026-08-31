@@ -81,6 +81,21 @@ hr {
     background-color: rgb(123, 103, 186);
 }
 
+#sections {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#card {
+    width: 350px;
+    padding: 16px 16px;
+    border-style: solid;
+    border-radius: 50px;
+    margin: 8px;
+}
+
 h1 {
     font-size: 48px;
     padding: 4px;
@@ -98,6 +113,7 @@ h3 {
 }
 
 p {
+    font-size: 20px;
     margin: 4px;
 }
 
@@ -109,8 +125,25 @@ p {
         grid-template-areas: "roles" "links" "images";
     }
 
+    #tuffpr {
+        height: 220px;
+    }
+
     #silly {
         display: none;
+    }
+
+    #card {
+        text-align: center;
+        padding: 4px 10px;
+    }
+
+    ul li {
+        margin-bottom: 2px;
+    }
+
+    ul li a {
+        font-size: 24px;
     }
 }
 
